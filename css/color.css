@@ -1,0 +1,49 @@
+html {
+    background: rgb(4, 9, 13);
+    background: linear-gradient(180deg, rgba(4, 9, 13, 1) 0%, rgba(42, 14, 21, 1) 89%, rgba(46, 11, 16, 1) 100%);
+    color: #C5C8C6;
+}
+
+h2, h3 {
+    color: #b73541;
+    text-shadow: #b73541 0 0 10px;
+}
+
+#content-wrapper {
+    background-color: #12111f;
+    box-shadow: 0 0 6px rgba(10, 9, 16, 0.53);
+    color: #8de0ea;
+}
+
+p span {
+    color: #d7606b;
+    text-shadow: rgba(183, 53, 65, 0.75) 0 0 10px;
+}
+
+a:focus,
+a:hover {
+    color: #b7deea;
+    text-shadow: rgba(157, 225, 233, 0.75) 0 0 20px;
+}
+
+ul {
+    border: solid 2px rgb(183, 53, 65);
+    box-shadow: 0 0 30px rgba(183, 53, 65, 0.10);
+}
+
+li:first-child {
+    background-color: #2d121b;
+    color: #d7606b;
+    text-shadow: rgba(183, 53, 65, 0.75) 0 0 10px;
+    border-bottom-color: #581a20;
+}
+
+p #cursor {
+    background-color: #8de0ea;
+    color: #8de0ea;
+    box-shadow: 0 0 20px rgba(141, 224, 234, 0.75);
+}
+
+input {
+    color: #8de0ea;
+}

@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "Ubuntu Mono";
+    src: url("UbuntuMono-Regular.ttf") format("truetype");
+}
+
+html {
+    align-items: baseline;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    font: 18px/1 "Ubuntu Mono", monospace;
+    overflow: hidden;
+}
+
+#title-wrapper {
+    text-align: center;
+    padding: 5em 0;
+}
+
+h2, h3 {
+    padding: 0;
+    margin: 0;
+    font-weight: lighter;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+#content-wrapper {
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    min-height: 30ch;
+    min-width: 70vw;
+    padding: 2em;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    font-weight: bold;
+}
+
+nav {
+    column-gap: 1em;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin-bottom: 2em;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0 0;
+}
+
+li:first-child {
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 0.25em 0;
+    border-bottom: solid 1px;
+}
+
+li:first-child:before {
+    content: "[ ";
+}
+
+li:first-child:after {
+    content: " ]";
+}
+
+li:last-child {
+    margin: 0 0 1em;
+}
+
+p #cursor {
+    animation: blink 1.5s infinite;
+    position: relative;
+    left: -2ch;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    49% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+input {
+    font: inherit;
+    caret-color: transparent;
+    font-size: 1em;
+    padding: .5em;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.background::after {
+
+}
+
+.grain-img {
+    z-index: -1;
+}
+
+@keyframes grain {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(-5%, -10%);
+    }
+    30% {
+        transform: translate(3%, -15%);
+    }
+    50% {
+        transform: translate(12%, 9%);
+    }
+    70% {
+        transform: translate(9%, 4%);
+    }
+    90% {
+        transform: translate(-1%, 7%);
+    }
+}
